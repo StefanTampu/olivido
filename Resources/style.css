@@ -60,6 +60,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    overflow: hidden;
 }
 
 header {
@@ -76,7 +77,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;  
-    box-shadow: 0 4px 4px var(--blue);  
 }
 
 .logo {
@@ -84,6 +84,7 @@ header {
     background-color: olivedrab;
     border-radius: 70px;
     cursor: pointer;
+    opacity: 0.95;
 }
 
 nav {
@@ -98,7 +99,6 @@ nav {
     border-bottom: 4px solid hsl(33, 100%, 50%);
     background-color: inherit;
     color: hsl(82, 39%, 97%);
-/*    color: hsl(39, 100%, 30%);*/
     font-size: 24px;
     font-variant: small-caps;
     transition: 750ms;
@@ -110,3 +110,13 @@ nav {
     border-bottom: 4px solid orangered;
 }
 
+main {
+    flex-grow: 1;
+    background-color: hsl(82, 39%, 96%);
+}
+
+footer {
+    width: 100%;
+    background-color:chocolate;
+    height: 80px;
+}
