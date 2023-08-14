@@ -60,7 +60,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    overflow: hidden;
 }
 
 header {
@@ -111,9 +110,83 @@ nav {
 }
 
 main {
+    width: 100%;
     flex-grow: 1;
     background-color: hsl(82, 39%, 96%);
+    display: flex;
+    justify-content: center;
 }
+
+/*index grid*/
+#index-grid-container {
+    width: 90%;
+    display: grid;
+    grid-template: repeat(3, 480px) / repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    row-gap: 32px;
+}
+
+#index-grid-container > div {
+}
+
+#index-grid-container > div > div {
+    width: 50%;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.grid-large {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-small {
+    grid-column: span 1;
+    position: relative;
+}
+
+.grid-text-circle {
+    background-color: olivedrab;
+    box-shadow: inset 0 0 32px 0 hsl(82, 39%, 97%);
+    color: hsl(82, 39%, 97%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 26px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.grid-image {
+    border: 16px double olivedrab;
+    background-color: hsl(82, 39%, 97%);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#img-1, #img-2, #img-3 {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.circle-right {
+    position: absolute;
+    left: -200px;
+    bottom: -32px;
+}
+
+.circle-left {
+    position: absolute;
+    right: -200px;
+    bottom: -32px;
+}
+
+
 
 footer {
     width: 100%;
